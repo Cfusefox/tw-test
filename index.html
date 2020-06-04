@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+	<style>
+      .test-wrapper {
+        font-size: 13px;
+      }
+      .title-line {
+        display: flex;
+        margin: 10px 5px;
+      }
+      .title-object {
+        width: 85px;
+      }
+      .title-value {
+        width: 190px;
+      }
+      .title-input {
+        width: 160px;
+      }
+      .first-line, .second-line {
+        margin: 10px 15px;
+      }
+      .first-input {
+        height: 13px;
+      }
+      input[type="checkbox"] {
+        vertical-align: middle;
+      }
+    </style>
+</head>
+<body>
+    <div class="test-wrapper">
+      <form action="" method="POST">
+        <div class="title-wrapper">
+          <h2>Unified Modeling Langeage Theory Test</h2>
+          <div class="title-line">
+            <span class="title-object">Test Subject:</span>
+            <span class="title-value">Unified Modeling Language</span>
+            <span class="title-object">Time:</span>
+            <span class="title-value">100 minute</span>
+            <span class="title-object">Score:</span>
+            <span class="title-value">100</span>
+          </div>
+          <div class="title-line">
+            <span class="title-object">Class:</span>
+            <span class="title-value">
+              <select name="classSelect" id="class-select" class="title-input">
+                <option value="Class 1">Class 1</option>
+                <option value="Class 2">Class 2</option>
+                <option value="Class 3">Class 3</option>
+              </select>
+            </span>
+            <span class="title-object">Student ID:</span>
+            <span class="title-value">
+              <input type="text" name="studentID" id="student-id" class="title-input">
+            </span>
+            <span class="title-object">Name: </span>
+            <span class="title-value">
+              <input type="text" name="name" id="name" class="title-input">
+            </span>
+          </div>
+        </div>
+        <div class="first-wrapper">
+          <h2>1、Fill in the blanks(5 points per space, 20 points total)</h2>
+          <div class="first-line">
+            <label for="uml-full-name">1.The full name of UML in Chinese is: </label>
+            <input type="text" name="umlFullName" id="uml-full-name" class="first-input">
+          </div>
+          <div class="first-line">
+            <label for="most-prominent-feature">2.The most prominent feature of the object is: </label>
+            <input type="text" name="firstFeature" id="first-feature" class="first-input">
+            <input type="text" name="secondFeature" id="second-feature" class="first-input">
+            <input type="text" name="thirdFeature" id="third-feature" class="first-input">
+          </div>
+        </div>
+        <div class="second-wrapper">
+          <h2>2、Multiple choice question(10 points per space, 20 points total)</h2>
+          <div class="second-line">
+              <p>1.The relationship between UML and software engineering is:</p>
+              <input type="radio" name="secondFirstQuestion" value="UML is software engineering">(A) UML is software engineering<br/>
+              <input type="radio" name="secondFirstQuestion" value="UML participates in several stages of the software development process in software engineering">(B) UML participates in several stages of the software development process in software engineering<br/>
+              <input type="radio" name="secondFirstQuestion" value="UML has nothing to do with software engineering">(C) UML has nothing to do with software engineering<br/>
+              <input type="radio" name="secondFirstQuestion" value="UML is part of software engineering">(D) UML is part of software engineering
+          </div>
+          <div class="second-line">
+              <p>2.Java language support:</p>
+              <input type="radio" name="secondSecondQuestion" value="Single inheritance">(A) Single inheritance<br/>
+              <input type="radio" name="secondSecondQuestion" value="Multiple inheritance">(B) Multiple inheritance<br/>
+              <input type="radio" name="secondSecondQuestion" value="Single inheritance and multiple inheritance support">(C) Single inheritance and multiple inheritance support<br/>
+              <input type="radio" name="secondSecondQuestion" value="Single inheritance and multiple inheritance are not support">(D) Single inheritance and multiple inheritance are not support
+          </div>
+        </div>
+        <div class="third-wrapper">
+          <h2>3、Multiple choice(10 points per space, 20 points total)</h2>
+          <div class="second-line">
+            <p>1.The granularity of the use case is divided into the following three: </p>
+            <input type="checkbox" name="thirdFirstQuestion" value="Overview level">(A) Overview level<br/>
+            <input type="checkbox" name="thirdFirstQuestion" value="Demand level">(B) Demand level<br/>
+            <input type="checkbox" name="thirdFirstQuestion" value="User target level">(C) User target level<br/>
+            <input type="checkbox" name="thirdFirstQuestion" value="Sub-function level">(D) Sub-function level
+          </div>
+          <div class="second-line">
+            <p>2.The class diagram consists of which of the following three parts: </p>
+            <input type="checkbox" name="thirdSecondQuestion" value="Name">(A) Name<br/>
+            <input type="checkbox" name="thirdSecondQuestion" value="Attribute">(B) Attribute<br/>
+            <input type="checkbox" name="thirdSecondQuestion" value="Operation">(C) operation<br/>
+            <input type="checkbox" name="thirdSecondQuestion" value="Function">(D) Function
+          </div>
+        </div>
+        <div class="fourth-wrapper">
+          <h2>4、True of False(10 points per space, 20 potins total)</h2>
+          <div class="second-line">
+            <span>1.Use case diagrams are only used to communicate and communicate with customers to determine demand。</span>
+            <input type="radio" name="fourthFirstQuestion" value="true">√
+            <input type="radio" name="fourthFirstQuestion" value="false">×
+          </div>
+          <div class="second-line">
+            <span>2.In the state diagram, the termination state allows any number of multiples in a state diagram。</span>
+            <input type="radio" name="fourthSecondQuestion" value="true">√
+            <input type="radio" name="fourthSecondQuestion" value="false">×
+          </div>
+        </div>
+        <div class="fifth-wrapper">
+          <h2>5、Short answer question(20 points per space, 20 points total)</h2>
+          <div class="second-line">
+            <p>1.Briefly describe what the model is and how it behaves?</p>
+            <textarea name="describe" cols="70" rows="10"></textarea>
+          </div>
+        </div>
+        <button type="submit">Calculating score</button>
+      </form>
+    </div>
+  </body>
+</html>
